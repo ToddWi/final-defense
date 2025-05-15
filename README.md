@@ -51,7 +51,8 @@ deepspeed --master_port=24999 train_ds.py \
 ```
 
 ## Dataset
-In Logi-CoT ReasonSeg, we have collected 503 images (243 train, 60 val, and 200 test). The training and validation sets can be download from <a href="[https://drive.google.com/drive/folders/125mewyg5Ao6tZ3ZdJ-1-E3n04LGVELqy?usp=sharing](https://drive.google.com/file/d/12yvaYzD0W4RKueyKLIsOQRzmmbDyCvHu/view?usp=sharing)">**this link**</a>. 
+In Logi-CoT ReasonSeg, we have collected 503 images (243 train, 60 val, and 200 test). The training and validation sets can be downloaded from <a href="https://drive.google.com/file/d/12yvaYzD0W4RKueyKLIsOQRzmmbDyCvHu/view?usp=sharing">this link</a>.
+
 
 Each image is provided with an annotation JSON file:
 ```
