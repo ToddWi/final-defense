@@ -92,7 +92,7 @@ By default, we use 4-bit quantization. Feel free to delete the `--load_in_4bit` 
 
 
 ## Dataset
-In ReasonSeg, we have collected 1218 images (239 train, 200 val, and 779 test). The training and validation sets can be download from <a href="https://drive.google.com/drive/folders/125mewyg5Ao6tZ3ZdJ-1-E3n04LGVELqy?usp=sharing">**this link**</a>. 
+In Logi-CoT ReasonSeg, we have collected 503 images (243 train, 60 val, and 200 test). The training and validation sets can be download from <a href="https://drive.google.com/drive/folders/125mewyg5Ao6tZ3ZdJ-1-E3n04LGVELqy?usp=sharing">**this link**</a>. 
 
 Each image is provided with an annotation JSON file:
 ```
@@ -117,24 +117,3 @@ python3 utils/data_processing.py
 
 Besides, we leveraged GPT-3.5 for rephrasing instructions, so images in the training set may have **more than one instructions (but fewer than six)** in the "text" field. During training, users may randomly select one as the text query to obtain a better model.
 
-
-## Citation 
-If you find this project useful in your research, please consider citing:
-
-```
-@article{lai2023lisa,
-  title={LISA: Reasoning Segmentation via Large Language Model},
-  author={Lai, Xin and Tian, Zhuotao and Chen, Yukang and Li, Yanwei and Yuan, Yuhui and Liu, Shu and Jia, Jiaya},
-  journal={arXiv preprint arXiv:2308.00692},
-  year={2023}
-}
-@article{yang2023improved,
-  title={An Improved Baseline for Reasoning Segmentation with Large Language Model},
-  author={Yang, Senqiao and Qu, Tianyuan and Lai, Xin and Tian, Zhuotao and Peng, Bohao and Liu, Shu and Jia, Jiaya},
-  journal={arXiv preprint arXiv:2312.17240},
-  year={2023}
-}
-```
-
-## Acknowledgement
--  This work is built upon the [LLaVA](https://github.com/haotian-liu/LLaVA) and [SAM](https://github.com/facebookresearch/segment-anything). 
